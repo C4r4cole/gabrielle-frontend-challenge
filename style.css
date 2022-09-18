@@ -1,3 +1,87 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: hsl(30, 38%, 92%);
+    height: 630px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    font-family: 'Fraunces', serif;
+    line-height: 30px;
+    color: hsl(212, 21%, 14%);
+}
+
+h2{
+    font-size: 13px;
+    letter-spacing: 8px;
+}
+
+h2, p{
+    color: hsl(228, 12%, 48%);
+}
+
+p{
+    line-height: 22px;
+    font-size: 13px;
+}
+
+.bigPrice{
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 35px;
+}
+
+.lineThrough{
+    text-decoration: line-through;
+    font-size: 12px;
+    vertical-align: top;
+}
+
+.centralBlock{
+    background: white;
+    border-radius: 10px;
+    width: 600px;
+    height: 450px;
+    display: flex;
+}
+
+.imgBlock{
+    width: 300px;
+}
+
+img{
+    width: 300px;
+    border-radius: 10px 0 0 10px;
+}
+
+.cropped1{
+    visibility: hidden;
+}
+
+.textBlock{
+width: 300px;
+padding: 1em 3em 1em 2em;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+.btn{
+    background-color: hsl(158, 36%, 37%);
+    border: 2px solid hsl(158, 36%, 37%);
+    color: white;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:active{
+    background-color: hsl(158, 39%, 24%);
+    border: 2px solid hsl(158, 39%, 24%);
+}
 
 .attribution {
   font-size: 11px;
@@ -6,4 +90,78 @@
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px){
+   
+    body{
+        font-family: 'Montserrat', sans-serif;
+        background: hsl(30, 38%, 92%);
+        height: 610px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    h1{
+        line-height: 28px;
+        font-size: 28px;
+        height: 40px;
+    }
+    
+    h2{
+        font-size: 11px;
+        letter-spacing: 8px;
+        height: 10px;
+    }
+    
+    h2, p{
+        color: hsl(228, 12%, 48%);
+    }
+    
+    p{
+        line-height: 22px;
+        font-size: 11px;
+    }
+    
+    .bigPrice{
+        font-family: 'Fraunces', serif;
+        color: hsl(158, 36%, 37%);
+        font-size: 28px;
+    }
+    
+    .lineThrough{
+        text-decoration: line-through;
+        font-size: 10px;
+        vertical-align: top;
+    }
+    
+    .centralBlock{
+        background: white;
+        border-radius: 10px;
+        width: 340px;
+        height: 570px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .imgBlock{
+        width: 340px;
+        height: 250px;
+    }
+
+    img{
+        display: none;
+    }
+
+    .cropped1{
+        visibility: visible;
+        display: block;
+        border-radius: 10px 10px 0 0;
+        width: 340px;
+        height: auto;
+    }
 }
